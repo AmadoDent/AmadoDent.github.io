@@ -1,4 +1,4 @@
-
+/*NavBar*/
   .custom-navbar {
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     font-size: 25px; /* Adjust the font size as needed */
     margin-right: 30px;/*space betwwen elements*/
     font-family: 'Libre Franklin', sans-serif;
-    color: black; /* Change to your desired text color */
+    color: hover; /* Change to your desired text color */
   }
   .btn-custom {
     font-size: 25px;
@@ -28,11 +28,93 @@
   }
 
   .navbar-nav .nav-link.active {/*current page */
-    color: black;
+    color: hover;
     font-weight: bold;
     /* Add any additional styles as desired */
   }
   
+
+/*------------------------------------------------------------------------------------*/
+/* HEADING AND DROPDOWN SERVICES*/
+
+.container1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 32px;
+  margin-bottom: 10px; /* Added margin to create space between heading and button */
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-secondary {
+  background-color: #1D49A7;
+  color: WHITE;
+  border: 1px solid white;
+  font-weight: bold;
+  width: 150px;
+}
+
+.custom-button:hover {
+  background-color: #1D49A7;
+  color: white;
+  width: 150px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  margin-top: 5px; /* Added margin to create space between button and dropdown */
+}
+
+.dropdown:hover .dropdown-toggle {
+  background-color: #1D49A7;
+  color: white;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: white;
+  color: black;
+}
+.dropdown-menu {
+  margin-top: 5px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu:hover {
+  position: absolute;
+  z-index: 2;
+}
+
+.dropdown-container:hover ~ * {
+  opacity: 0.1; /* opacity for other elements */
+}
+
+
+
+
+.dropdown-item:hover {
+  background-color: #1D49A7;
+  color: #fff;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+/*CALENDAR+DATE+TIME*/
+.container {
+  display: flex;
+   background-color: WHITE;
+  padding: 60px;
+}
+
 /* BOOK APPOINTMENT */
 .heading {
   color: white;
@@ -92,6 +174,7 @@
 
 /* Timeslots styling */
 .timeslots {
+  
   margin: 25px auto;
   max-width: 400px;
   display: grid;
@@ -99,6 +182,7 @@
   grid-gap: 25px;
   flex: 1;
 }
+
 
 .row {
   display: flex;
@@ -150,36 +234,5 @@
   background-color: #1D49A7;
 }
 
-.container {
-  display: flex;
-   background-color: white;
-  padding: 60px;
-}
-.container {
-  position: relative;
-  padding: 60px;
-  
-}
 
-.dropdown{
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
 
-.btn-secondary{
-  background-color: #1D49A7;
-  color: white;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  background-color: white;
-  color: black;
-}
-.dropdown:hover .dropdown-toggle {
-  background-color: #1D49A7;
-  color: white;
-}

@@ -36,6 +36,7 @@ function highlightActiveNavItem() {
     const timeslots = document.querySelectorAll(".timeslot");
     const selectedDateDisplay = document.getElementById("selected-date");
     const selectedTimeDisplay = document.getElementById("selected-time");
+    const selectedServiceDisplay = document.getElementById("selected-service");
   
     const currentDate = new Date();
     let selectedDate = null;
@@ -128,19 +129,48 @@ function updateTimeslots() {
         selectedTime = this.textContent;
         timeslots.forEach((slot) => slot.classList.remove("selected"));
         this.classList.add("selected");
-        selectedTimeDisplay.textContent = selectedTime;
+        selectedServiceDisplay.textContent = selectedTime;
       });
     });
   }
   
-  const dropdownItems = document.querySelectorAll(".dropdown-item");
-  let selectedItem = null;
-  const selectedItemDisplay = document.getElementById("selectedItemDisplay");
+  const dropdownButton = document.getElementById('dropdownMenuButton1');
+  const dropdownItems = document.querySelectorAll('.dropdown-item');
   
-  dropdownItems.forEach((item) => {
-    item.addEventListener("click", function() {
-      selectedItem = item.dataset.value;
-      selectedItemDisplay.textContent = "Selected item: " + selectedItem;
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', function(event) {
+      event.preventDefault();
+      const selectedValue = this.getAttribute('data-value');
+      dropdownButton.textContent = selectedValue; // Update the button name
+      document.getElementById('selected-service').textContent = selectedValue;
     });
   });
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
+  
+    dropdownToggle.addEventListener('click', function() {
+      dropdownMenu.classList.toggle('show');
+    });
+  
+    dropdownItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        const selectedValue = this.innerText;
+        dropdownToggle.innerText = selectedValue;
+        dropdownMenu.classList.remove('show');
+      });
+    });
+  
+    document.addEventListener('click', function(event) {
+      const targetElement = event.target;
+      if (!targetElement.closest('.dropdown')) {
+        dropdownMenu.classList.remove('show');
+      }
+    });
+  });
+
   
