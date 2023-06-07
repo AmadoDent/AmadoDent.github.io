@@ -33,12 +33,22 @@
     /* Add any additional styles as desired */
   }
   
-
+/* BOOK APPOINTMENT */
+.heading {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: #1D49A7;
+  padding: 60px;
+}
 /* Calendar styling */
 .calendar {
   margin: 20px auto;
   max-width: 400px;
   text-align: center;
+  flex: 1;
 }
 
 .calendar-header {
@@ -71,28 +81,29 @@
 
 .calendar-prev:hover,
 .calendar-next:hover {
-  background-color: blue;
+  background-color: #1D49A7;
 }
 
 .calendar-table td {
   cursor: pointer;
 }
 
-.calendar-table td.highlighted {
-  background-color: red;
-  color: blue;
-}
+
 
 /* Timeslots styling */
 .timeslots {
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  flex: 1;
 }
 
 .row {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .timeslot {
@@ -101,11 +112,18 @@
   padding: 10px;
   margin: 0 5px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 10px;
+  flex: 1;
+  margin-bottom: 15px
+ 
 }
 
 .timeslot:hover {
   background-color: #1D49A7;
+}
+.timeslot.selected {
+  background-color: #1D49A7;
+  color: white;
 }
 
 /* Selected information styling */
@@ -130,4 +148,38 @@
 
 .calendar-table td.selected {
   background-color: #1D49A7;
+}
+
+.container {
+  display: flex;
+   background-color: white;
+  padding: 60px;
+}
+.container {
+  position: relative;
+  padding: 60px;
+  
+}
+
+.dropdown{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.btn-secondary{
+  background-color: #1D49A7;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: white;
+  color: black;
+}
+.dropdown:hover .dropdown-toggle {
+  background-color: #1D49A7;
+  color: white;
 }

@@ -121,3 +121,26 @@ function highlightActiveNavItem() {
     initCalendar();
   });
   
+  // Inside the updateTimeslots() function
+function updateTimeslots() {
+    timeslots.forEach((slot) => {
+      slot.addEventListener("click", function () {
+        selectedTime = this.textContent;
+        timeslots.forEach((slot) => slot.classList.remove("selected"));
+        this.classList.add("selected");
+        selectedTimeDisplay.textContent = selectedTime;
+      });
+    });
+  }
+  
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+  let selectedItem = null;
+  const selectedItemDisplay = document.getElementById("selectedItemDisplay");
+  
+  dropdownItems.forEach((item) => {
+    item.addEventListener("click", function() {
+      selectedItem = item.dataset.value;
+      selectedItemDisplay.textContent = "Selected item: " + selectedItem;
+    });
+  });
+  
