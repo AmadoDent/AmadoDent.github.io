@@ -1,0 +1,118 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <title>Amado Dent</title>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <!-- Rest of your HTML code for the index page -->
+  
+  <script>
+    // Load the navbar content using JavaScript
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+        highlightActiveNavItem();
+      });
+  
+  </script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  
+    <!-- Link to Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  
+    <title>Amado Dent</title>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>  
+    
+    
+    <div class="calendar">
+      <div class="calendar-header">
+        <button class="calendar-prev">&lt; Prev</button>
+        <h2 class="calendar-title"></h2>
+        <button class="calendar-next">Next &gt;</button>
+      </div>
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="timeslots">
+      <div class="row">
+        <div class="timeslot">8:00 AM</div>
+        <div class="timeslot">9:00 AM</div>
+        <div class="timeslot">10:00 AM</div>
+      </div>
+      <div class="row">
+        <div class="timeslot">11:00 AM</div>
+        <div class="timeslot">12:00 PM</div>
+        <div class="timeslot">13:00 PM</div>
+      </div>
+      <div class="col">
+        <div class="timeslot">14:00 AM</div>
+        <div class="timeslot">15:00 PM</div>
+        <div class="timeslot">16:00 PM</div>
+      </div>
+    </div>
+  
+    <div class="selected-info">
+      <h3>Selected Date:</h3>
+      <p id="selected-date"></p>
+      <h3>Selected Time:</h3>
+      <p id="selected-time"></p>
+    </div>
+  
+    
+  
+    
+
+  </body>
+  </html>
+  
+  <script src="effects.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

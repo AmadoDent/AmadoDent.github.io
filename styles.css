@@ -1,0 +1,133 @@
+
+  .custom-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .navbar-nav .nav-link {
+    font-size: 25px; /* Adjust the font size as needed */
+    margin-right: 30px;/*space betwwen elements*/
+    font-family: 'Libre Franklin', sans-serif;
+    color: black; /* Change to your desired text color */
+  }
+  .btn-custom {
+    font-size: 25px;
+    background-color: #1D49A7; /* Change to your desired color */
+    color: white; /* Change to your desired text color */
+    font-family: 'Libre Franklin', sans-serif;
+  }
+  .center-elements {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover { /*targets the nav-link class when it is being hovered over by the mouse cursor*/
+    border-bottom: 4px solid #1D49A7;
+    
+  }
+
+  .navbar-nav .nav-link.active {/*current page */
+    color: black;
+    font-weight: bold;
+    /* Add any additional styles as desired */
+  }
+  
+
+/* Calendar styling */
+.calendar {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.calendar-title {
+  font-size: 20px;
+}
+
+.calendar-table {
+  width: 100%;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 5px;
+}
+
+.calendar-prev,
+.calendar-next {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.calendar-prev:hover,
+.calendar-next:hover {
+  background-color: blue;
+}
+
+.calendar-table td {
+  cursor: pointer;
+}
+
+.calendar-table td.highlighted {
+  background-color: red;
+  color: blue;
+}
+
+/* Timeslots styling */
+.timeslots {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.timeslot {
+  background-color: #DFEAFF;
+  border: 1px solid #1D49A7;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.timeslot:hover {
+  background-color: #1D49A7;
+}
+
+/* Selected information styling */
+.selected-info {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.selected-info h3 {
+  font-size: 18px;
+}
+
+.selected-info p {
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.calendar-table td.current {
+  background-color: #DFEAFF;
+}
+
+.calendar-table td.selected {
+  background-color: #1D49A7;
+}
