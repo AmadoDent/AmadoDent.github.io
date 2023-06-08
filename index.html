@@ -16,18 +16,24 @@
 </head>
 <body>
   <div id="navbar-placeholder"></div>
+  <div id="footer-placeholder"></div>
 
-  <!-- Rest of your HTML code for the index page -->
   
   <script>
-    // Load the navbar content using JavaScript
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('navbar-placeholder').innerHTML = html;
-        highlightActiveNavItem();
-      });
+    // Function to load HTML content into an element
+    function loadHTML(url, elementId) {
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById(elementId).innerHTML = html;
+        });
+    }
   
+    // Load the navbar and footer content using JavaScript
+    window.onload = function() {
+      loadHTML('navbar.html', 'navbar-placeholder');
+      loadHTML('footer.html', 'footer-placeholder');
+    };
   </script>
   
   <script src="effects.js"></script>
