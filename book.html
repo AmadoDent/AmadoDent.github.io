@@ -69,6 +69,9 @@
           <li><a class="dropdown-item" href="#" data-value="Whitening">Whitening</a></li>
           <li><a class="dropdown-item" href="#" data-value="Cleaning">Cleaning</a></li>
         </ul>
+
+        
+        
       </div>
 
     </div>
@@ -121,12 +124,16 @@
       </div>
       
       <div class="selected-info">
-        <select class="form-select" id="selectedPro">
-          <option value="" selected disabled hidden>Dentist</option>
-          <option value="Jean-Luc">Jean-Luc</option>
-          <option value="Sean">Sean</option>
-          <option value="Caroline">Caroline</option>
-      </select>
+        <div class="dropdown"></div>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dentistsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Dentists
+          </button>
+          <ul class="dropdown-menu dropdown-menu1 " aria-labelledby="dentistsDropdown">
+            <li><a class="dropdown-item1" href="#" data-value="Dentist 1">Dentist 1</a></li>
+            <li><a class="dropdown-item1" href="#" data-value="Dentist 2">Dentist 2</a></li>
+            <li><a class="dropdown-item1" href="#" data-value="Dentist 3">Dentist 3</a></li>
+          </ul>
+      </div>
 
        <div class="hiddencontentsorry">
         <h3>Selected Service:</h3>

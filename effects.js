@@ -134,56 +134,74 @@ function updateTimeslots() {
     });
   }
   
-  const dropdownButton = document.getElementById('dropdownMenuButton1');
-  const dropdownItems = document.querySelectorAll('.dropdown-item');
-  
+ 
+
+  // Dropdown for Services
+const dropdownButton1 = document.getElementById('dropdownMenuButton1');
+const dropdownItems1 = document.querySelectorAll('.dropdown-item');
+
+dropdownItems1.forEach(item => {
+  item.addEventListener('click', function(event) {
+    event.preventDefault();
+    const selectedValue = this.getAttribute('data-value');
+    dropdownButton1.textContent = selectedValue; // Update the button name
+    document.getElementById('selected-service').textContent = selectedValue;
+  });
+});
+
+// Dropdown for Dentists
+const dropdownButton2 = document.getElementById('dentistsDropdown');
+const dropdownItems2 = document.querySelectorAll('.dropdown-item1');
+
+dropdownItems2.forEach(item => {
+  item.addEventListener('click', function(event) {
+    event.preventDefault();
+    const selectedValue = this.getAttribute('data-value');
+    dropdownButton2.textContent = selectedValue; // Update the button name
+    document.getElementById('selected-dentist').textContent = selectedValue;
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
+
+  dropdownToggle.addEventListener('click', function() {
+    dropdownMenu.classList.toggle('show');
+  });
+
   dropdownItems.forEach(item => {
     item.addEventListener('click', function(event) {
-      event.preventDefault();
-      const selectedValue = this.getAttribute('data-value');
-      dropdownButton.textContent = selectedValue; // Update the button name
-      document.getElementById('selected-service').textContent = selectedValue;
+      event.preventDefault(); // Prevent the default link behavior
+      const selectedValue = this.innerText;
+      dropdownToggle.innerText = selectedValue;
+      dropdownMenu.classList.remove('show');
     });
   });
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const dropdownToggle = document.querySelector('.dropdown-toggle');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-    const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item');
-  
-    dropdownToggle.addEventListener('click', function() {
-      dropdownMenu.classList.toggle('show');
-    });
-  
-    dropdownItems.forEach(item => {
-      item.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        const selectedValue = this.innerText;
-        dropdownToggle.innerText = selectedValue;
-        dropdownMenu.classList.remove('show');
-      });
-    });
-  
-    document.addEventListener('click', function(event) {
-      const targetElement = event.target;
-      if (!targetElement.closest('.dropdown')) {
-        dropdownMenu.classList.remove('show');
-      }
-    });
+  document.addEventListener('click', function(event) {
+    const targetElement = event.target;
+    if (!targetElement.closest('.dropdown')) {
+      dropdownMenu.classList.remove('show');
+    }
   });
+});
 
-  const bookButton = document.getElementById('bookButton');
-    const popup = document.getElementById('popup');
-    const closeButton = document.getElementById('closeButton');
+const bookButton = document.getElementById('bookButton');
+const popup = document.getElementById('popup');
+const closeButton = document.getElementById('closeButton');
 
-    bookButton.addEventListener('click', function() {
-      popup.style.display = 'block';
-    });
+bookButton.addEventListener('click', function() {
+  popup.style.display = 'block';
+});
 
-    closeButton.addEventListener('click', function() {
-      popup.style.display = 'none';
-    });
+closeButton.addEventListener('click', function() {
+  popup.style.display = 'none';
+});
+
+// Rest of the existing JavaScript code...
+
 
     
 //ADD TO THE POP-UP SELECTED INFO
@@ -214,6 +232,7 @@ document.getElementById("bookButton").addEventListener("click", function() {
 
   // Set the values in the popup
   document.getElementById("popup-selected-service").textContent = selectedService;
+  document.getElementById("popup-selected-dentist").textContent = selectedDentist;
   document.getElementById("popup-selected-datetime").textContent = selectedDateTime;
   document.getElementById("popup-selected-dentist").textContent = selectedDentist;
 
