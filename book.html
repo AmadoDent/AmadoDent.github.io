@@ -119,7 +119,16 @@
           <div class="timeslot">16:00 PM</div>
         </div>
       </div>
+      
       <div class="selected-info">
+        <select class="form-select" id="selectedPro">
+          <option value="" selected disabled hidden>Dentist</option>
+          <option value="Jean-Luc">Jean-Luc</option>
+          <option value="Sean">Sean</option>
+          <option value="Caroline">Caroline</option>
+      </select>
+
+       <div class="hiddencontentsorry">
         <h3>Selected Service:</h3>
         <p id="selected-service"></p>
         <h3>Selected Dentist:</h3>
@@ -128,6 +137,7 @@
         <p id="selected-date"></p>
         <h3>Selected Time:</h3>
         <p id="selected-time"></p>
+       </div>
         
       </div>
     
@@ -155,9 +165,9 @@
         <div id="popup" class="popup">
           <div class="popup-content">
             <h2>APPOINTMENT CONFIRMATION</h2>       
-            <p id="popup-selected-datetime"></p>
-            <p id="popup-selected-service"></p>
-            <p id="popup-selected-dentist"></p>
+       <p id="popup-selected-datetime"></p>
+    <p id="popup-selected-service"></p>
+    <p id="popup-selected-dentist"></p>
             <button id="closeButton">OK</button>
           </div>
         </div>
