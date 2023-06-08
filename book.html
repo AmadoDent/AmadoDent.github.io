@@ -48,8 +48,10 @@
     <title>Amado Dent</title>
   </head>
   <body>
+
     <div id="navbar-placeholder"></div>  
     
+
     <div class="container1"> <!-- HEADING + SERVICES -->
       <div class="content-wrapper">
         <h1 class="heading">BOOK APPOINTMENT</h1>
@@ -131,7 +133,36 @@
     
     </div>
     
-    
+    <div class="container2">
+      <h2 class="sub-heading">CONTACT DETAILS</h2>
+      <form class="border p-4 rounded">
+        <div class="row mb-3">
+            <div class="row">
+                <label class="form-label">Full name*</label>
+                <input type="text" class="form-control" id="fullName">
+            </div>
+            <div class="row">
+                <label class="form-label">Email address*</label>
+                <input type="email" class="form-control" id="userEmail">
+            </div>
+            <div class="row">
+              <label class="form-label">Phone Number*</label>
+              <input type="email" class="form-control" id="phoneNumber">
+          </div>
+        </div>  
+        <button id="bookButton">BOOK</button>
+
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <h2>APPOINTMENT CONFIRMATION</h2>       
+            <p id="popup-selected-datetime"></p>
+            <p id="popup-selected-service"></p>
+            <p id="popup-selected-dentist"></p>
+            <button id="closeButton">OK</button>
+          </div>
+        </div>
+    </form>
+    </div>
     
   
     

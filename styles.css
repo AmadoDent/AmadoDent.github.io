@@ -58,6 +58,7 @@
   border: 1px solid white;
   font-weight: bold;
   width: 150px;
+  border-radius: 10px;
 }
 
 .custom-button:hover {
@@ -226,6 +227,22 @@
   
 }
 
+.form-select {
+  background-color: white;
+  color: black;
+}
+
+.form-select option:hover {
+  background-color: #1D49A7;
+  color: white;
+}
+
+
+.form-select option:checked {
+  background-color: #1D49A7;
+  color: white;
+}
+
 .calendar-table td.current {
   background-color: #DFEAFF;
 }
@@ -234,5 +251,113 @@
   background-color: #1D49A7;
 }
 
+.form-label1 {
+  color: black; 
+  font-size: 16px; 
+  font-weight: bold;
+}
 
 
+.container2{
+  background-color: white;
+  height:500px;
+}
+
+.sub-heading {
+  font-size: 25px;
+  margin-bottom: 10px; /* Added margin to create space between heading and button */
+  font-family: 'Libre Franklin', sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#closeButton {
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #1D49A7;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#bookButton {
+  background-color: #1D49A7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#closeButton  {
+  background-color: #1D49A7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Customized styles for the popup paragraphs */
+#popup-selected-service,
+#popup-selected-datetime,
+#popup-selected-dentist {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.popup-text {
+  font-weight: bold;
+  font-family: 'Libre Franklin', sans-serif;
+  color: black;
+}
+
+.form-label {
+  position: relative;
+  left: 26%; 
+  text-align: left;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+.form-control {
+  width: 700px; 
+  height: 50px; 
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  padding: 6px 10px;
+  background-color: #DFEAFF; 
+  border-radius: 10px;
+  
+}

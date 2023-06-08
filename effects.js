@@ -173,4 +173,56 @@ function updateTimeslots() {
     });
   });
 
-  
+  const bookButton = document.getElementById('bookButton');
+    const popup = document.getElementById('popup');
+    const closeButton = document.getElementById('closeButton');
+
+    bookButton.addEventListener('click', function() {
+      popup.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
+
+    
+//ADD TO THE POP-UP SELECTED INFO
+   
+// Load the navbar content using JavaScript
+fetch('navbar.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('navbar-placeholder').innerHTML = html;
+    highlightActiveNavItem();
+  });
+
+// Add event listener to the BOOK button
+document.getElementById("bookButton").addEventListener("click", function() {
+  // Get the selected values
+  var selectedService = document.getElementById("selected-service").textContent;
+  var selectedDentist = document.getElementById("selected-dentist").textContent;
+  var selectedDate = document.getElementById("selected-date").textContent;
+  var selectedTime = document.getElementById("selected-time").textContent;
+
+  // Format the date
+  var date = new Date(selectedDate);
+  var options = { month: 'long', day: 'numeric' };
+  var formattedDate = date.toLocaleDateString('en-US', options);
+
+  // Combine the formatted date and time
+  var selectedDateTime = formattedDate + ", " + selectedTime;
+
+  // Set the values in the popup
+  document.getElementById("popup-selected-service").textContent = selectedService;
+  document.getElementById("popup-selected-datetime").textContent = selectedDateTime;
+  document.getElementById("popup-selected-dentist").textContent = selectedDentist;
+
+  // Show the popup
+  document.getElementById("popup").style.display = "block";
+});
+
+// Add event listener to the Close button in the popup
+document.getElementById("closeButton").addEventListener("click", function() {
+  // Hide the popup
+  document.getElementById("popup").style.display = "none";
+});
