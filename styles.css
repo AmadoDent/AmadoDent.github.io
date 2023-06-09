@@ -1,6 +1,7 @@
 body {
   margin: 0 auto; /* Center the content horizontally */
   overflow-x: hidden; /* Hide horizontal overflow */
+  background-color: white;
 }
 /*NavBar*/
   .custom-navbar {
@@ -655,7 +656,7 @@ margin-bottom:0px;
 
 /*HOMEPAGE---------------------------------------------------------*/
 body {
-	background-color: #f8fafc;
+	
   margin: 0 auto;
 }
 
@@ -711,5 +712,144 @@ body {
 }
 
 .slide-image:hover {
-  filter: brightness(30%);
+  filter: brightness(15%);
+}
+
+/*ABOUT US--------------------------------------------------------------*/
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  text-align: justify;
+}
+
+
+.dentists-row {
+  display: flex;
+  justify-content: center; 
+ 
+
+}
+
+.dentists-column {
+  text-align: center;
+  padding-left: 60px;
+  padding-right:60px;
+  padding-top:20px;
+  padding-bottom:65px;
+  transition: transform 0.3s ease, font-weight 0.3s ease, shadow 0.3s ease;
+}
+
+
+
+.card-img-top{
+  height:200px;
+  display:none;
+}
+
+.card-link{
+  text-align: right;
+  color:#1D49A7;
+  text-decoration: none;
+  position:relative;
+  left:30px;
+  margin-bottom:40px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.card-link:hover{
+  text-align: right;
+  color:#1D49A7; 
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.card-body2{
+  background-color: rgba(255, 255, 255, 0.877);
+  width:200px;
+  margin:0px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 6rem; 
+  border-radius: 5px;
+  text-align: left;
+  padding:15px;
+}
+
+.Juan {
+  width: 18rem;
+  background-image: url('Ressources/Juan.jpg');
+  background-size: cover;
+  background-position: center;
+  height:320px;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.John {
+  width: 18rem;
+  background-image: url('Ressources/John.jpg');
+  background-size: cover;
+  background-position: center;
+  height:320px;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Jean {
+  width: 18rem;
+  background-image: url('Ressources/Jean.jpg');
+  background-size: cover;
+  background-position: center;
+  height:320px;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dentists-column:hover{
+  transform: scale(1.1);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.about {
+  width: 80%; 
+  margin: 0 auto; /* Center the paragraph horizontally */
+  font-weight: 400;
+  font-size: 25px;
+ /* transform: translateY(50%);  Move down 50% of the element's height */
+}
+
+.column2 {
+  flex-basis: 100%;
+  text-align: left;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 15px;
+  text-align: center;
 }

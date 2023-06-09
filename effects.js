@@ -200,8 +200,6 @@ closeButton.addEventListener('click', function() {
   popup.style.display = 'none';
 });
 
-// Rest of the existing JavaScript code...
-
 
     
 //ADD TO THE POP-UP SELECTED INFO
@@ -246,4 +244,3 @@ document.getElementById("closeButton").addEventListener("click", function() {
   document.getElementById("popup").style.display = "none";
 });
 
-//SLIDESHOW--------------------------------------------------------
