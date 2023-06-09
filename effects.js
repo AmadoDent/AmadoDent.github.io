@@ -245,3 +245,5 @@ document.getElementById("closeButton").addEventListener("click", function() {
   // Hide the popup
   document.getElementById("popup").style.display = "none";
 });
+
+//SLIDESHOW--------------------------------------------------------
