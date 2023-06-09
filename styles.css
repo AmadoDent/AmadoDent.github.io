@@ -663,7 +663,10 @@ body {
   position: relative;
   width: 100%;
   height: 530px;
-  overflow: hidden;
+  background-color: #1D49A7;
+  align-items: center;
+  justify-content: center;
+   display: flex;
 }
 
 .slide-image {
@@ -672,14 +675,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .slide-image img {
-  object-fit: cover;
   width: 100%;
   height: 100%;
-}
+  object-fit: cover;
 
+}
 
 .slide-caption {
   position: absolute;
@@ -706,6 +710,6 @@ body {
   font-style: bold;
 }
 
-.slider img:hover {
+.slide-image:hover {
   filter: brightness(30%);
 }
