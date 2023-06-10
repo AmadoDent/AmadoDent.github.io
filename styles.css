@@ -53,6 +53,15 @@ body {
   left: -110px;
   border-radius: 10px;
 }
+.btn-custom2:hover{
+  font-size: 25px;
+  background-color: white; /* Change to your desired color */
+  color: #DFEAFF; /* Change to your desired text color */
+  font-family: 'Libre Franklin', sans-serif;
+  margin-top:25px;
+  left: -110px;
+  border-radius: 10px;
+}
 
 .divider {
   border: none;
@@ -76,13 +85,21 @@ body {
   text-align: center;
   vertical-align: text-top;
   margin:30px;
+  align-items: flex-start;/*same height*/
 }
 
+#titlecontact{
+  margin-bottom: 60px;
+}
+#info{
+  margin-bottom:40px;
+}
 
 
 .footer-column {
   flex: 1;
   margin: 10px;
+  position: relative;
 }
 .Contact {
   flex: 1;
@@ -99,9 +116,22 @@ body {
   cursor: pointer;
 }
 
+
+.footer-columnmap{
+  margin-top: 65px; 
+}
+.footer-columnb {
+  flex: 1;
+  margin: 10px;
+  position: relative;
+  margin-top: 65px; 
+}
+
 #map {
  
   background-color: #1D49A7;
+  position: absolute;
+  bottom: 0;
 }
 
 .office-hours {
@@ -1074,3 +1104,25 @@ margin-bottom: 20px;
 .small{
   font-size:15px;
 }
+
+.btn-services {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #0056b3;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translate(-80px,-20px);
+  opacity: 0.5;
+}
+
+.btn-services:hover {
+  
+  text-decoration: underline;
+  color:#0056b3;
+  opacity: 1;
+}
+
