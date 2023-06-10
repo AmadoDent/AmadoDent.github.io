@@ -40,6 +40,7 @@ body {
   }
   
 
+
 /*------------------------------------------------------------------------------------*/
 .body{
   max-width: 1200px;
@@ -206,6 +207,12 @@ body {
 
 .dropdown-menu {
   margin-top: 5px; /* Added margin to create space between button and dropdown */
+  width: 250px;
+  
+}
+#doble{
+  margin-top:10px;
+  font-weight: bold;
 }
 
 .dropdown:hover .dropdown-toggle {
@@ -447,6 +454,7 @@ body {
   height:500px;
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 .sub-heading {
@@ -554,6 +562,10 @@ h2 {
   background-color: #DFEAFF; 
   border-radius: 10px;
   
+}
+
+#box.border.p-4.rounded{
+  border:none;
 }
 
 /*SERVICE PAGE---------------------------------------------------------------------------------*/
