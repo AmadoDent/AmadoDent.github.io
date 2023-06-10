@@ -752,7 +752,8 @@ body {
 }
 
 .slide-image:hover {
-  filter: brightness(15%);
+
+  opacity: 0.1;
 }
 
 /*ABOUT US--------------------------------------------------------------*/
