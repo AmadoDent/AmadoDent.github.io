@@ -1,0 +1,85 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <title>Amado Dent</title>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  
+  <div class="containerservices">
+    <div class="left-columnservices">
+        <h3 class="type-service1">General Dentistry</h3>
+        <div class="service-implants" style="width: 18rem;">
+            <img class="card-img-top" src="Ressources/tooth implant.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Teeth Implants</h5>
+              <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+              </svg>Starting at $50</p>
+            
+            </div>
+         
+          
+          </div>
+    </div>
+    <div class="right-columnservices">
+        <p class="sub-heading3">Teeth Implants</p>
+        <h4 class="subsub">What is it?</h4>
+        <p class="description">A dental implant is an artificial tooth root which acts as an anchor for a replacement tooth. 
+            Shaped like a screw, it is surgically placed into the jawbone. After your bone heals around the implant, 
+            usually in three to six months, we place a permanent crown over the implant to complete your restoration. </p>
+        <h4 class="subsub">Who needs it?</h4>
+        <p class="description">
+            Dental implants can be a great option for patients who are missing a tooth or teeth but still want something that 
+            can feel and function like a natural tooth. A dental implant can restore the look, feel, and function of a natural 
+            tooth.</p>
+
+        <p class="small">
+            Starting at
+
+        </p>
+        <p class="price">
+            $60
+        </p>
+        <hr class="divider2">
+        <button type="button" class="btn btn-custom4 btn-lg" onclick="window.location.href='book.html'">Book Appointment</button>
+    </div>
+  </div>
+
+  <script>
+    // Function to load HTML content into an element
+    function loadHTML(url, elementId) {
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById(elementId).innerHTML = html;
+        });
+    }
+  
+    // Load the navbar and footer content using JavaScript
+    window.onload = function() {
+      loadHTML('navbar.html', 'navbar-placeholder');
+      loadHTML('footer.html', 'footer-placeholder');
+    };
+  </script>
+  
+
+  <div id="footer-placeholder"></div>
+  <script src="effects.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

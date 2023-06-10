@@ -508,6 +508,7 @@ h2 {
   font-size: 16px;
   font-weight: bold;
   color: black;
+  transform:translateX(-75px)
 }
 
 
@@ -879,6 +880,7 @@ body {
 .right-column {
   flex-basis: 66.66%;
   padding: 20px;
+  margin-top:65px;
 }
 
 .contact {
@@ -930,14 +932,18 @@ text-align: center;
 }
 
 .contactsquare{
-  padding-left:200px;
-  padding-right:200px;
-  padding-top:50px;
+  text-align: center;
   background-color: #DFEAFF;
+  width:600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin:0px auto;
+  margin-top: 30px;
+
 }
 
 .form-control2 {
-  width: 700px; 
+  width: 500px; 
   height: 50px; 
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -946,4 +952,104 @@ text-align: center;
   background-color: white; 
   border-radius: 10px;  
   border: none;
+ 
+}
+
+
+.form-label2{
+  position: relative;
+  left: 26%; 
+  text-align: left;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transform:translateX(-100px);
+}
+#message.form-control2{
+  height:200px;
+}
+
+/*PARTICULAR SERVICES*-----------------------------------*/
+.containerservices {
+  display: flex;
+ padding-left: 150px;
+ padding-right: 100px;
+ padding-bottom:50px;
+}
+
+.left-columnservices {
+  flex-basis: 33.33%;
+  background-color: white;
+  padding: 20px;
+}
+
+.right-columnservices {
+  flex-basis: 66.66%;
+  background-color: white;
+  padding: 30px;
+}
+
+.type-service1{
+  font-size: 25px;
+  margin-bottom: 5px; 
+  font-family: 'Libre Franklin', sans-serif;
+  color: #1D49A7;
+  font-weight: lighter;
+  text-align: left;
+  margin-top:50px;
+  position: relative;
+  left: 55px; /* Adjust the value as needed */
+margin-top:25px;
+
+}
+.service-implants{
+ margin:0px auto;
+}
+.subsub{
+  color:#1D49A7;
+}
+.description{
+  width:600px;
+  text-align: justify;
+}
+
+
+.sub-heading3 {
+  font-size: 50px;
+  margin-bottom: 0px; 
+
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin-top:40px;
+font-weight: 500;
+line-height: 48px;
+margin-bottom: 20px;
+
+}
+
+.btn.btn-custom4.btn-lg{
+  font-size: 25px;
+  background-color: #1D49A7; /* Change to your desired color */
+  color: white; /* Change to your desired text color */
+  font-family: 'Libre Franklin', sans-serif;
+  border: none;
+  transform: translateX(172px);
+}
+
+.divider2 {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px auto; 
+  width: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  transform: translateX(-100px);
+}
+
+.price{
+  font-size:30px;
+  font-weight: bold;
+}
+.small{
+  font-size:15px;
 }
