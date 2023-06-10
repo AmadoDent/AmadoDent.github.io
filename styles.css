@@ -132,6 +132,7 @@ body {
   background-color: #1D49A7;
   position: absolute;
   bottom: 0;
+  border-radius: 50px;
 }
 
 .office-hours {
