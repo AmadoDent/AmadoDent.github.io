@@ -1005,6 +1005,28 @@ margin-top:25px;
 .service-implants{
  margin:0px auto;
 }
+
+.service-fillings{
+  margin:0px auto;
+ }
+ 
+
+.service-removal{
+  margin:0px auto;
+}
+
+.service-braces{
+  margin:0px auto;
+}
+
+.service-whitening{
+  margin:0px auto;
+}
+
+.service-cleaning{
+  margin:0px auto;
+}
+
 .subsub{
   color:#1D49A7;
 }
@@ -1012,7 +1034,6 @@ margin-top:25px;
   width:600px;
   text-align: justify;
 }
-
 
 .sub-heading3 {
   font-size: 50px;
