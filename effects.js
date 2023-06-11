@@ -122,7 +122,7 @@ function highlightActiveNavItem() {
     initCalendar();
   });
   
-  // Inside the updateTimeslots() function
+  
 function updateTimeslots() {
     timeslots.forEach((slot) => {
       slot.addEventListener("click", function () {

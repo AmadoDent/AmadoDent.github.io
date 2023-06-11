@@ -36,10 +36,12 @@ body {
   .navbar-nav .nav-link.active {/*current page */
     color: hover;
     font-weight: bold;
-    /* Add any additional styles as desired */
+   
   }
   
-
+  @media (max-width: 767px) {
+    /* Add your mobile styles here */
+  }
 
 /*------------------------------------------------------------------------------------*/
 .body{
@@ -572,8 +574,7 @@ h2 {
 .services-row {
   display: flex;
   justify-content: center; 
- 
-
+  /*flex-direction: column;*/
 }
 
 .services-column {
@@ -583,6 +584,7 @@ h2 {
   padding-top:20px;
   padding-bottom:65px;
   transition: transform 0.3s ease, font-weight 0.3s ease, shadow 0.3s ease;
+  flex-direction: column;
 }
 
 .type-service{

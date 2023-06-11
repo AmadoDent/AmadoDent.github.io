@@ -13,7 +13,7 @@ using the innerHTML property.-->
     </a>
     <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-      Hola
+    
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
@@ -36,3 +36,16 @@ using the innerHTML property.-->
     </div>
   </div>
 </nav>
+
+<script>
+  function highlightActiveNavItem() {
+    var currentPage = location.pathname.split('/').slice(-1)[0];
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  }
+</script>
