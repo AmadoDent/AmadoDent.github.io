@@ -23,6 +23,7 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     border: none;
   }
+  
   .center-elements {
     display: flex;
     align-items: center;
@@ -40,9 +41,15 @@ body {
     border-bottom: 4px solid #1D49A7;
    
   }
-  
-  
 
+  .navbar-nav .nav-item.active {/*current page */
+  
+    font-weight: bold;
+    border-bottom: 4px solid #1D49A7;
+  }
+  #bookB.underline {
+    text-decoration: underline;
+  }
 /*------------------------------------------------------------------------------------*/
 .body{
   max-width: 1200px;
