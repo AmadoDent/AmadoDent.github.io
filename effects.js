@@ -32,7 +32,7 @@ function highlightActiveNavItem() {
 // Execute the highlighting when the DOM is ready
 document.addEventListener("DOMContentLoaded", highlightActiveNavItem);
 
-
+//Calendar
   document.addEventListener("DOMContentLoaded", function () {
     const calendarTable = document.querySelector(".calendar-table");
     const calendarTitle = document.querySelector(".calendar-title");
@@ -207,13 +207,7 @@ closeButton.addEventListener('click', function() {
     
 //ADD TO THE POP-UP SELECTED INFO
    
-// Load the navbar content using JavaScript
-fetch('navbar.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('navbar-placeholder').innerHTML = html;
-    highlightActiveNavItem();
-  });
+
 
 // Add event listener to the BOOK button
 document.getElementById("bookButton").addEventListener("click", function() {
