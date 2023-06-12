@@ -49,6 +49,7 @@ body {
   }
   #bookB.underline {
     text-decoration: underline;
+    border-bottom: 4px solid #1D49A7;
   }
 /*------------------------------------------------------------------------------------*/
 .body{
