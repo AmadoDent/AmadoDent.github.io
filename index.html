@@ -17,24 +17,45 @@
 <body>
   <div id="navbar-placeholder"></div>
   
-
-  
   <script>
     // Function to load HTML content into an element
     function loadHTML(url, elementId) {
       fetch(url)
-        .then(response => response.text())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to load HTML content');
+          }
+          return response.text();
+        })
         .then(html => {
           document.getElementById(elementId).innerHTML = html;
+          highlightActiveNavItem();
+        })
+        .catch(error => {
+          console.error(error);
         });
     }
   
     // Load the navbar and footer content using JavaScript
-    window.onload = function() {
+    window.addEventListener('DOMContentLoaded', function() {
       loadHTML('navbar.html', 'navbar-placeholder');
       loadHTML('footer.html', 'footer-placeholder');
-    };
+    });
+  
+    function highlightActiveNavItem() {
+      var currentPage = location.pathname.split('/').slice(-1)[0];
+      var navLinks = document.querySelectorAll('.navbar-nav .nav-item .nav-link');
+  
+      navLinks.forEach(link => {
+        var linkHref = link.getAttribute('href');
+        if (linkHref && linkHref.endsWith(currentPage)) {
+          link.classList.add('active');
+        }
+      });
+    }
   </script>
+  
+
 
     <div class="slide-item">
       <div class="slide-image">

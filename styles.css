@@ -30,18 +30,18 @@ body {
   
   .navbar-nav .nav-item .nav-link:hover { /*targets the nav-link class when it is being hovered over by the mouse cursor*/
     border-bottom: 4px solid #1D49A7;
+    font-weight: bold;
     
   }
 
-  .navbar-nav .nav-link.active {/*current page */
-    color: hover;
+  .navbar-nav .nav-item .nav-link.active {/*current page */
+  
     font-weight: bold;
+    border-bottom: 4px solid #1D49A7;
    
   }
   
-  @media (max-width: 767px) {
-    /* Add your mobile styles here */
-  }
+  
 
 /*------------------------------------------------------------------------------------*/
 .body{

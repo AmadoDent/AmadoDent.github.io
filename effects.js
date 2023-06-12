@@ -19,16 +19,19 @@ navLinks.forEach(function(link) {
 
 // navbar.js
 function highlightActiveNavItem() {
-    var currentPage = location.pathname.split('/').slice(-1)[0];
-    var navLinks = document.querySelectorAll('.nav-link');
+  var currentPage = location.pathname.split('/').slice(-1)[0];
+  var navLinks = document.querySelectorAll('.navbar-nav .nav-item .nav-link');
 
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-      }
-    });
-  }
- 
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+}
+
+// Execute the highlighting when the DOM is ready
+document.addEventListener("DOMContentLoaded", highlightActiveNavItem);
+
 
   document.addEventListener("DOMContentLoaded", function () {
     const calendarTable = document.querySelector(".calendar-table");

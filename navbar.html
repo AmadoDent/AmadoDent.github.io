@@ -8,7 +8,7 @@ using the innerHTML property.-->
 <!-- navbar.html -->
 <nav class="navbar navbar-inverse bg-inverse navbar-expand-sm navbar-light custom-navbar">
   <div class="container-fluid shadow-sm p-3.5 mt-8 mb-8 bg-white rounded">
-    <a href="#" class="navbar-brand">
+    <a href="index.html" class="navbar-brand">
       <img class="d-inline-block align-top" src="Ressources/Amado.png" width="160" height="110" />
     </a>
     <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,15 +37,3 @@ using the innerHTML property.-->
   </div>
 </nav>
 
-<script>
-  function highlightActiveNavItem() {
-    var currentPage = location.pathname.split('/').slice(-1)[0];
-    var navLinks = document.querySelectorAll('.nav-link');
-
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-      }
-    });
-  }
-</script>
