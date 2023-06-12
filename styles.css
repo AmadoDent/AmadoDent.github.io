@@ -1020,9 +1020,11 @@ text-align: center;
   font-weight: bold;
   transform:translateX(-100px);
 }
+
 #message.form-control2{
   height:200px;
 }
+
 
 /*PARTICULAR SERVICES*-----------------------------------*/
 .containerservices {
