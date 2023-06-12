@@ -1,10 +1,10 @@
 # AmadoDent.github.io
 
-Site d’entreprise de service: Amado Dent - Dental Clinic
+Projet 1 - Site d’entreprise de service: Amado Dent - Dental Clinic
 
 Cours: SEG 3525
 
-Nom: Carolina González González
+Nom: Carolina González
 
 Numéro d’étudiant: 300262719
 
